@@ -212,7 +212,9 @@ li a:hover {
   color: white;
 
 }
-
+.first_block > h1{
+  padding-top: 90px;
+}
 .button_first_block{
   text-align: center;
 }
@@ -228,48 +230,9 @@ li a:hover {
   width: 260px;
   height: 30px;
 }
-.call_manager{
-  position: relative;
-  background-color: #ff0000;
-  border-radius: 42px;
-  border: none;
-  font-size: 28px;
-  color: #FFFFFF;
-  width: 200px;
-  text-align: center;
-  -webkit-transition-duration: 0.4s;
 
-  /*SAFARI*/
-  transition-duration: 0.4s;
-  text-decoration: none;
-  overflow: hidden;
-  cursor: pointer;
-}
-.call_manager:after{
-  content: "";
-  background: #ffffff;
-  display: block;
-  position: absolute;
-  padding-top: 300%;
-  padding-left: 350%;
-  margin-left: -20px!important;
-  margin-top: -120%;
-  opacity: 0;
-  transition: all 0.8s
-}
-.call_manager:active:after{
-  padding: 0;
-  margin: 0;
-  opacity: 1;
-  transition: 0s;
-}
 
-.kachestvo{
-  text-align: center;
-  color: white;
-  line-height: normal;
-  vertical-align: middle;
-}
+
 .container_first_block{
   width: 100vw;
   height: 100vh;
