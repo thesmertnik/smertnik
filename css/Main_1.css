@@ -329,3 +329,13 @@ li a:hover {
   }
 
 }
+@media  screen and (max-width: 450px) {
+  .first_block{
+    font-size: 22px;
+    text-align: center;
+    padding-top: 120px;
+  }
+  .button_to_call{
+    padding-top: 250px;
+  }
+}
