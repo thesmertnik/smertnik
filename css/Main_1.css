@@ -282,10 +282,11 @@ li a:hover {
 
 }
 @media screen and (max-width: 200px) {
-  .first_block{
+  .first_block > h1{
     font-size: 22px;
     text-align: center;
     padding-top: 120px;
+    color: white;
   }
   .button_to_call{
     padding-top: 250px;
@@ -293,10 +294,11 @@ li a:hover {
 
 }
 @media  screen and (max-width: 550px) {
-  .first_block{
+  .first_block > h1{
     font-size: 22px;
     text-align: center;
     padding-top: 120px;
+    color: white;
   }
   .button_to_call{
     padding-top: 250px;
