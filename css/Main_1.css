@@ -276,7 +276,7 @@ li a:hover {
 .container_first_block{
   width: 100vw;
   height: 100vh;
-  background-image: url("../img/main_photo_jpeg.jpeg");
+  background-image: url("../img/Main_photo_jpeg.jpeg");
   background-blend-mode: darken;
   background-repeat: no-repeat;
   background-position: center center;
