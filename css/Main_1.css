@@ -281,7 +281,7 @@ li a:hover {
   }
 
 }
-@media screen and (max-width: 300px) {
+@media screen and (max-width: 200px) {
   .first_block{
     font-size: 22px;
     text-align: center;
