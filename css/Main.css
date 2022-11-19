@@ -266,5 +266,309 @@ html,body{
 }
 
 
+/* NAVIGATION */
+* {
+  box-sizing: border-box;
+}
+html,body{
+  height: 100%;
+}
+
+.badge{
+  --badge-width: 10px;
+  position: absolute;
+  top: 12px;
+  right: 5px;
+  width: var(--badge-width);
+  height: var(--badge-width);
+  background-color: red;
+  border-radius: calc(var(--badge-width) / 2);
+  text-align: center;
+  /* line-height: 30px; */
+  color: #ffffff;
+  transform: scale(.7);
+}
+.navbar{
+  padding: 0 2rem;
+  box-shadow: 1px 1px 10px rgba(85, 85, 85, 75);
+  display: flex;
+  position: relative;
+  justify-content: space-between;
+  align-items: center;
+  background-color: rgba(0, 0, 0, 0.69);
+  color: #ffffff;
+}
+.brand-title{
+  font-size: 1.5rem;
+  margin: .5rem;
+}
+
+.brand-title:first-letter{
+  color: red;
+}
+.navbar-links{
+  height: 100%;
+}
+.navbar-links ul{
+  display: flex;
+  margin: 0;
+  padding: 0;
+}
+.navbar-links li{
+  list-style: none;
+}
+.navbar-links li a{
+  display: block;
+  text-decoration: none;
+  color: #ffffff;
+  padding: 1rem;
+}
+.navbar-links li:hover{
+  background-color: rgb(255, 0, 0);
+
+}
+/*Кнокпа камбургер меню */
+.toggle-button{
+  position: absolute;
+  top: .84rem;
+  right: 1rem;
+  display: none;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 30px;
+  height: 20px;
+}
+/* Отдельные линии кнопки */
+.toggle-button .bar{
+  height: 3px;
+  width: 100%;
+  background-color: #ffffff;
+  border-radius: 10px;
+}
+/* Для устройств с размеро экрана меньше 800px отобржаем гамбургер меню */
+@media screen  and (max-width: 800px){
+  .navbar{
+    padding: 0 .1rem;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .toggle-button{
+    display: flex;
+  }
+  .navbar-links{
+    display: none;
+    width: 100%;
+  }
+  .navbar-links ul{
+    width: 100%;
+    flex-direction: column;
+  }
+  .navbar-links ul li{
+    padding: .5rem 1rem;
+  }
+  .navbar-links ul li a{
+    padding: .5rem 1rem;
+  }
+  .navbar-links.active{
+    display: flex;
+  }
+}
+
+main{
+  display: flex;
+  flex-wrap: wrap;
+  flex: 1;
+  background-color: #00ffff;
+  color: #ffffff;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+}
+/* адаптинвый размер для текста 1 блока */
+@media (min-width: 320px) {
+  .home h1{
+    font-size: 16px;
+  }
+}
+@media (min-width: 589px) {
+  .home h1{
+    font-size: 46px;
+  }
+
+}
+@media (min-width: 780px) {
+  .home h1{
+    font-size: 56px;
+  }
+
+}
+@media (min-width: 919px) {
+  .home h1{
+    font-size: 66px;
+  }
+
+}
+/* Кнопка вызова звонка */
+.button{
+  width: 142px;
+  height: 42px;
+  background-color: #ff0000;
+  color: #ffffff;
+  text-align: center;
+  justify-content: center;
+  border-radius: 12px;
+  text-decoration: none;
+  align-items: center;
+  margin-left: 25%;
+}
+.button a{
+  color: white;
+  text-decoration: none;
+}
+.button:hover{
+  color: cyan;
+  background-color: rgba(0, 0, 0, 0.84);
+}
+
+
+.services h2{
+  text-align: center;
+  font-size: 46px;
+  padding-top: 22px;
+}
+@media  screen and (min-width: 220px) {
+  .services h2{
+    font-size: 16px;
+  }
+  .about_me h2{
+    font-size: 16px;
+  }
+}
+@media  screen and (min-width: 268px) {
+  .services h2{
+    font-size: 24px;
+  }
+  .about_me h2{
+    font-size: 16px;
+  }
+}
+@media  screen and (min-width: 320px) {
+  .services h2{
+    font-size: 28px;
+  }
+  .about_me h2{
+    font-size: 16px;
+  }
+  .about_me img{
+    color: white;
+    background-color: white;
+  }
+}
+@media  screen and (min-width: 589px) {
+  .services h2{
+    font-size: 36px;
+  }
+  .about_me h2{
+    font-size: 16px;
+  }
+}
+
+/*Раздел услуг */
+.container{
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  display: grid;
+  grid-template-columns: 300px 300px 300px 300px;
+  grid-auto-rows: 200px 200px 200px 200px;
+  grid-gap: 1em;
+  grid-column: span 2;
+  grid-auto-flow: dense;
+}
+
+
+
+@media (min-width: 260px) {
+  .container{
+    display: grid;
+    grid-template-columns: repeat(1, 0.1fr);
+  }
+}
+@media (min-width: 320px) {
+  .container{
+    display: grid;
+    grid-template-columns: repeat(1, 0.1fr);
+  }
+}
+@media (min-width: 520px) {
+  .container{
+    display: grid;
+    grid-template-columns: repeat(2, 0.1fr);
+
+  }
+}
+@media (min-width: 560px) {
+  .container{
+    display: grid;
+    grid-template-columns: repeat(2, 0.1fr);
+  }
+}
+@media (min-width: 780px) {
+  .container{
+    display: grid;
+    grid-template-columns: repeat(3, 0.1fr);
+  }
+}
+@media (min-width: 980px) {
+  .container{
+    display: grid;
+    grid-template-columns: repeat(4, 0.1fr);
+  }
+}
+/*Первая карточка услуги */
+.container{
+  padding-top: 20px;
+  color: white;
+}
+.container a{
+  text-decoration: none;
+  color: white;
+}
+.first_services{
+  background-color: rgba(0, 0, 0, 0.67);
+  width: 250px;
+  height: 200px;
+  border-radius: 17px;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+}
+.first_services img{
+  padding-top: 8px;
+}
+
+/* Блок: О нас */
+
+.about_me{
+  padding: 40px;
+  color: black;
+}
+.about_me h2{
+  text-align: center;
+  font-size: 42px;
+}
+.about_me img{
+  width: 400px;
+  height: 400px;
+  margin-left: 160px;
+
+}
+.about {
+  float: right;
+  margin-right: 420px;
+  margin-top: 70px;
+  width: 400px;
+  height: 100px;
+}
 
 
