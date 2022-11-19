@@ -23,71 +23,72 @@
 
   <meta name="theme-color" content="#fafafa">
 
-
-
 </head>
 <body style="overflow-x: hidden;">
-<div class="container_first_block">
-<header class="header">
-  <!-- Logo -->
-  <a href="#" class="logo">Estart</a>
-
-  <!-- Hamburger icon -->
-  <input class="side-menu" type="checkbox" id="side-menu"/>
-  <label class="hamb" for="side-menu"><span class="hamb-line"></span></label>
-
-  <!-- Menu -->
-  <nav class="nav">
-    <ul class="menu">
-      <li><a href="#home">Главная</a></li>
-      <li><a href="#uslugi">Услуги</a></li>
-      <li><a href="#">Почему мы?</a></li>
-      <li><a href="#">Стоимость</a></li>
-      <li><a href="#">Мы поможем</a></li>
+<nav class="navbar">
+  <!-- Логотип сайта -->
+  <div class="brand-title">
+    Estart.by
+  </div>
+  <!-- Кнопка - гамбургер меню -->
+  <a href="#" class="toggle-button">
+    <span class="bar"></span>
+    <span class="bar"></span>
+    <span class="bar"></span>
+  </a>
+  <div class="navbar-links">
+    <ul>
+      <li><a href="#home" style="position: relative;">Главная</a></li>
+      <li><a href="#services">Услуги</a></li>
+      <li><a href="#">О нас</a></li>
       <li><a href="#">Контакты</a></li>
-      <li><a href="tel:+375333644432">+375 (33) 607-65-31</a></li>
     </ul>
-  </nav>
-</header>
-<!--
-<div class="container_first_block">
-  <nav>
-
-<ul id="home">
-  <li style="float: left; margin: 0; .titl"><a href="#" class="title_estart">Estart</a></li>
-  <li class="home_tel"><a href="tel:+375336076531">+375(33)607-65-31</a></li>
-  <li><a href="#">Контакты</a></li>
-  <li><a href="#">Мы поможем</a></li>
-  <li><a href="#">Стоимость</a></li>
-  <li><a href="#">Почему мы?</a></li>
-  <li><a href="#">Услуги</a></li>
-  <li><a href="#home">Главная</a></li>
-</ul>
-  <a href="#" id="pull">Menu</a>
-  </nav>
-  -->
-<div class="first_block" id="home">
-  <h1 >ВЫЕЗДНОЙ РЕМОНТ <br> АВТО</h1>
-
-</div>
-</div>
-
-<div class="second_block" id="uslugi">
-  <h2 style="padding-bottom: 100px;">НАШИ УСЛУГИ</h2>
-  <div class="first_usluga">
-    <img src="img/Tools.png" alt="Техническое обслуживание">
-      <h3>Техническое обслуживание</h3>
   </div>
-  <div class="first_usluga">
-    <img src="img/Tools.png" alt="Техническое обслуживание">
-    <h3>Техническое обслуживание</h3>
+</nav>
+<main>
+  <div class="home">
+    <h1>Ремонт автомобилей в Минске</h1>
+    <div class="button">
+      <a href="tel:+375333644432">Позвонить Менеджеру</a>
+    </div>
   </div>
-  <div class="first_usluga">
-    <img src="img/Tools.png" alt="Техническое обслуживание">
-    <h3>Техническое обслуживание</h3>
+</main>
+<div class="services" id="services">
+  <h2>НАШИ УСЛУГИ</h2>
+  <div class="container">
+    <div class="first_services">
+      <img src="img/Car-repair.png" alt="выезд">
+      <h3>Выездной ремонт авто</h3>
+      <a href="#">подробнее -></a>
+    </div>
+    <div class="first_services">
+      <img src="img/tools.png" alt="выезд">
+      <h3>Стационарный ремонт</h3>
+      <a href="#">подробнее -></a>
+    </div>
+    <div class="first_services">
+      <img src="img/Diagnostik.png" alt="выезд">
+      <h3>Диагностика</h3>
+      <a href="#">подробнее -></a>
+    </div>
+    <div class="first_services">
+      <img src="img/Electrika.png" alt="выезд">
+      <h3>Автоэлектрика</h3>
+      <a href="#">подробнее -></a>
+    </div>
   </div>
 </div>
 
+<div class="about_me">
+  <h2>О нас</h2>
+  <img src="img/Logo_estart_For_about_me.png" alt="">
+  <div class="about">
+    <h3>Компания Estart, кто мы?</h3>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. At eaque facere nulla omnis, qui sequi vitae. Asperiores, consequuntur dignissimos ducimus eaque excepturi ipsa ipsam libero nobis, obcaecati, perspiciatis recusandae tempora.</p>
+  </div>
+</div>
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
   <script src="js/vendor/Modernizr-3.11.2.min.js"></script>
   <script src="js/Plugins.js"></script>
   <script src="js/Main.js"></script>
