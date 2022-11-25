@@ -4,12 +4,12 @@
 <head>
   <meta charset="utf-8">
   <title>Estart</title>
-  <meta name="description" content="Выездной ремонт в Минске. Необходим выездной ремонт стартера/генератора? Легко! Быстрая консультация, низкие цены, успейте сейчас ->">
+  <meta name="description" content="Автосервис Estart - это выездной ремонт,диагностика,ТО и ремонт автомобилей любых марок в Минске.">
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
-  <meta property="og:title" content="Estart">
-  <meta property="og:type" content="Ремонт автомобилей">
-  <meta property="og:url" content="">
+  <meta property="og:title" content="Ремонт автомобилей в Минске">
+  <meta property="og:type" content="article">
+  <meta property="og:url" content="article">
   <meta property="og:image" content="">
 
   <link rel="manifest" href="site.webmanifest">
@@ -19,7 +19,6 @@
 
   <link rel="stylesheet" href="css/Normalize.css">
   <link rel="stylesheet" href="css/Main.css">
-  <link rel="stylesheet" href="css/Main_1.css">
 
   <meta name="theme-color" content="#fafafa">
 
@@ -40,58 +39,198 @@
     <ul>
       <li><a href="#home" style="position: relative;">Главная</a></li>
       <li><a href="#services">Услуги</a></li>
-      <li><a href="#">О нас</a></li>
-      <li><a href="#">Контакты</a></li>
+      <li><a href="#about_me">О нас</a></li>
+      <li><a href="#contacts">Контакты</a></li>
+      <li><a href="#why_we">Почему мы?</a></li>
     </ul>
   </div>
 </nav>
-<main>
-  <div class="home">
-    <h1>Ремонт автомобилей в Минске</h1>
-    <div class="button">
-      <a href="tel:+375333644432">Позвонить Менеджеру</a>
+
+<div class="slideshow-container" id="home">
+  <!-- Full-width images with number and caption text -->
+  <div class="mySlides fade">
+    <div class="numbertext">1 / 3</div>
+    <img src="img/Main_photo.jpg" style="width:100%">
+    <div class="text">
+      <p>Качественный стационарный и выездной ремонт автомобилей в Минске</p>
+      <h1 style="color: red;">Estart</h1>
+
     </div>
   </div>
-</main>
+  <div class="mySlides fade">
+    <div class="numbertext">2 / 3</div>
+    <img src="img/Main_photo.jpg" style="width:100%">
+    <div class="text">
+      <h1>
+        Стационарный ремонт в Минске
+      </h1>
+      <p>
+        Наличие запчастей на все марки у нас на складе!
+      </p>
+    </div>
+  </div>
+  <div class="mySlides fade">
+    <div class="numbertext">3 / 3</div>
+    <img src="img/" style="width:100%">
+    <div class="text">
+      <h1>
+
+      </h1>
+    </div>
+  </div>
+  <!--
+  <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+  <a class="next" onclick="plusSlides(1)">&#10095;</a>
+  -->
+</div>
+<br>
+<!-- нижние кнопки навигации по слайдам.
+<div style="text-align:center">
+  <span class="dot" onclick="currentSlide(1)"></span>
+  <span class="dot" onclick="currentSlide(2)"></span>
+  <span class="dot" onclick="currentSlide(3)"></span>
+</div>
+-->
+<header>
+
 <div class="services" id="services">
   <h2>НАШИ УСЛУГИ</h2>
   <div class="container">
     <div class="first_services">
       <img src="img/Car-repair.png" alt="выезд">
       <h3>Выездной ремонт авто</h3>
-      <a href="#">подробнее -></a>
+      <a href="pages/field_repair.html">подробнее -></a>
     </div>
     <div class="first_services">
-      <img src="img/tools.png" alt="выезд">
+      <img src="img/Tools.png" alt="выезд">
       <h3>Стационарный ремонт</h3>
-      <a href="#">подробнее -></a>
+      <a href="pages/stationary_repair.html">подробнее -></a>
     </div>
-    <div class="first_services">
+    <div class="second_services">
       <img src="img/Diagnostik.png" alt="выезд">
       <h3>Диагностика</h3>
-      <a href="#">подробнее -></a>
+      <a href="pages/Diagnostick.html">подробнее -></a>
     </div>
     <div class="first_services">
       <img src="img/Electrika.png" alt="выезд">
       <h3>Автоэлектрика</h3>
-      <a href="#">подробнее -></a>
+      <a href="pages/electrics.html">подробнее -></a>
     </div>
   </div>
 </div>
 
-<div class="about_me">
-  <h2>О нас</h2>
-  <img src="img/Logo_estart_For_about_me.png" alt="">
-  <div class="about">
-    <h3>Компания Estart, кто мы?</h3>
-    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. At eaque facere nulla omnis, qui sequi vitae. Asperiores, consequuntur dignissimos ducimus eaque excepturi ipsa ipsam libero nobis, obcaecati, perspiciatis recusandae tempora.</p>
-  </div>
+<div class="about_me" id="about_me">
+  <h2 style="text-align: center; font-size: 16pt;">О нас</h2>
+      <div class="card">
+        <h3>Твое лого</h3>
+        <div class="card_container">
+          <h4><b>Estart.by - кто мы?</b></h4>
+          <p>Компания Estart.by рада предложить качественные услуги ремонта стартеров
+          и генераторов и всей электрики автомобиля. Работаем со всеми марками авто.
+          Автозапчасти под замену заказываем сами и гарантируем их надежность.
+          Работаем с проверенными поставщиками....<br></p>
+          <button id="myBtn">Подробнее »</button>
+          <div class="modal" id="myModal">
+            <!-- Modal content -->
+            <div class="modal-content">
+              <div class="modal-header">
+                <span class="close">x</span>
+                <h2 style="text-align: center">О нас</h2>
+              </div>
+              <div class="modal-body">
+                <p>Компания Estart.by рада предложить качественные услуги ремонта стартеров
+                и генераторов и всей электрики автомобиля. Работаем со всеми марками авто.
+                Автозапчасти под замену заказываем сами и гарантируем их надежность.
+                Работаем с проверенными поставщиками. Цена на запчасти всегда честная
+                и без накрутки.</p>
+                <p>
+                  Для каждого клиента дорого его время. Работы по ремонту выполняются в точно
+                  оговоренный срок. Ремонт производится в день обращения (если была
+                  оговаренна запись).
+                </p>
+                <p>
+                  Услуга «Выезд автоэлектрика» поможет сэкономить время на поездку в
+                  автосервис. При ремонте стартера и генератора, мастер выезжает к клиенту,
+                  снимает агрегат и увозит на ремонт, после завершения возвращается для установки.
+                  На все работы дается гарантия. Возможность обменять старые агрегаты на новые или
+                  восстановленные обеспечат вам низкую стоимость услуги.
+                </p>
+                <p>
+                  Компьютерная диагностика поможет выявить основные неисправности автомобиля.
+                  Часто ремонт автоэлектрики возможно произвести быстро и на месте выезда.
+                </p>
+                <p>
+                  Для постоянных клиентов мы проводим акции и предоставляем скидки на последующие заказы.
+                  Примеры выполненных работ вы можете посмотреть в разеделе <a href="#">Блог</a>
+                </p>
+                <p>
+                  Своей работе мы отдаемся по максимуму, и вы обязательно это почувствуете, когда
+                  обратитеть именно к нам. Для вашего удобства мы работаем без выходных и до позднего вечера.
+                  Ждем звонков с понедельника по воскресенье с 9:00 до 23:00. <a href="tel:+375336076531">Звоните!</a>
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
 </div>
 
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
-  <script src="js/vendor/Modernizr-3.11.2.min.js"></script>
+  <div class="services" id="why_we">
+    <h2>Почему мы?</h2>
+    <div class="container">
+      <div class="first_services">
+        <h3><b>Быстрая диагностика авто</b></h3>
+        <p>Диагностика автомобиля выполняется прямо на месте выезда.
+          После диагностики мастер устранит неисправности.</p>
+      </div>
+      <div class="second_services">
+        <h3><b>Гарантия на работу и детали</b></h3>
+        <p>Гарантия на выполненную работу от 6 месяцев.
+          Гарантия на запасные части согласно установленной производителем.</p>
+      </div>
+      <div class="first_services">
+        <h3><b>Срочный выезд на место поломки</b></h3>
+        <p>
+          Если вам срочно нужна помощь на дороге, то мы незамедлительно выезжаем к вам на помощь.
+        </p>
+      </div>
+      <div class="first_services">
+        <h3><b>Всегда самые выгодные цены</b></h3>
+        <p>
+          Наш выездной автосервис знаменит самыми честными ценами без лишних накруток за работу
+          и сменные детали для ремонта.
+        </p>
+      </div>
+    </div>
+  </div>
+
+</header>
+
+  <div class="contacts" id="contacts">
+    <div class="adres">
+      <h3>Адрес</h3>
+      <p>г.Минск, ул.</p>
+    </div>
+    <div class="phone">
+      <h3>Телефон</h3>
+      <p>
+        +375(33) 607-65-31 <br>
+        +375(29) 996-69-29
+      </p>
+    </div>
+    <div class="mail">
+      <h3>Эл. почта</h3>
+      <p>life3de@yandex.ru</p>
+    </div>
+    <div class="time_work">
+      <h3>График работы</h3>
+      <p>Понедельник - Пятница: 08:00 - 23:00 <br>
+        Суббота - Воскресенье: 09:00 - 21:00
+      </p>
+    </div>
+  </div>
+
   <script src="js/Plugins.js"></script>
   <script src="js/Main.js"></script>
-
 </body>
 </html>

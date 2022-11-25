@@ -274,6 +274,7 @@ html,body{
   height: 100%;
 }
 
+
 .badge{
   --badge-width: 10px;
   position: absolute;
@@ -346,7 +347,7 @@ html,body{
   border-radius: 10px;
 }
 /* Для устройств с размеро экрана меньше 800px отобржаем гамбургер меню */
-@media screen  and (max-width: 800px){
+@media screen and (max-width: 800px){
   .navbar{
     padding: 0 .1rem;
     flex-direction: column;
@@ -378,11 +379,12 @@ main{
   display: flex;
   flex-wrap: wrap;
   flex: 1;
-  background-color: #00ffff;
   color: #ffffff;
   text-align: center;
   align-items: center;
   justify-content: center;
+  width: 100vw;
+  height: auto;
 }
 /* адаптинвый размер для текста 1 блока */
 @media (min-width: 320px) {
@@ -408,6 +410,103 @@ main{
   }
 
 }
+/* Слайдер первого блока home */
+.slideshow-container {
+  position: relative;
+  margin: auto;
+  width: 100vw;
+  height: 100vh;
+}
+.slideshow-container img{
+  object-fit: cover;
+  width: 100vw;
+  height: 100vh;
+}
+/* Hide the images by default */
+.mySlides {
+  display: none;
+}
+
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -22px;
+  padding: 16px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+
+/* Caption text */
+.text {
+  color: #f2f2f2;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+
 /* Кнопка вызова звонка */
 .button{
   width: 142px;
@@ -493,22 +592,38 @@ main{
     display: grid;
     grid-template-columns: repeat(1, 0.1fr);
   }
+  .contacts{
+    display: grid;
+    grid-template-columns: repeat(1, 0.1fr);
+  }
 }
 @media (min-width: 320px) {
   .container{
     display: grid;
     grid-template-columns: repeat(1, 0.1fr);
   }
+  .contacts{
+    display: grid;
+    grid-template-columns: repeat(1, 0.1fr);
+  }
+
 }
 @media (min-width: 520px) {
   .container{
     display: grid;
     grid-template-columns: repeat(2, 0.1fr);
-
+  }
+  .contacts{
+    display: grid;
+    grid-template-columns: repeat(2, 0.1fr);
   }
 }
 @media (min-width: 560px) {
   .container{
+    display: grid;
+    grid-template-columns: repeat(2, 0.1fr);
+  }
+  .contacts{
     display: grid;
     grid-template-columns: repeat(2, 0.1fr);
   }
@@ -518,9 +633,17 @@ main{
     display: grid;
     grid-template-columns: repeat(3, 0.1fr);
   }
+  .contacts{
+    display: grid;
+    grid-template-columns: repeat(3, 0.1fr);
+  }
 }
 @media (min-width: 980px) {
   .container{
+    display: grid;
+    grid-template-columns: repeat(4, 0.1fr);
+  }
+  .contacts{
     display: grid;
     grid-template-columns: repeat(4, 0.1fr);
   }
@@ -546,29 +669,170 @@ main{
 .first_services img{
   padding-top: 8px;
 }
+.second_services{
+  background-color: rgba(0, 0, 0, 0.67);
+  background-image: url("../img/diagnostic_for_second_block.jpg");
+  background-position: center;
+  background-attachment: local;
+  background-repeat: no-repeat;
+  width: 250px;
+  height: 200px;
+  border-radius: 17px;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+}
 
 /* Блок: О нас */
+.card{
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+  transition: 0.8s;
+  width: 90%;
+  max-width: 500px;
+  margin: 0 auto;
+}
+.card img{
+  align-items: flex-start;
+}
+.card:hover{
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+}
+.card_container{
+  padding: 2px 16px;
+}
 
-.about_me{
-  padding: 40px;
-  color: black;
-}
-.about_me h2{
-  text-align: center;
-  font-size: 42px;
-}
-.about_me img{
-  width: 400px;
-  height: 400px;
-  margin-left: 160px;
+/*Модальное окно о нас*/
+.modal{
+  display: none;
+  position: fixed;;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgb(0,0,0);
+  background-color: rgba(0,0,0,0.4);
 
 }
-.about {
+/*Конент модального окна */
+.modal{
+  display: none;
+  position: fixed;
+  z-index: 1;
+  padding-top: 100px;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgb(0,0,0);
+  background-color: rgba(0,0,0,0.4);
+
+}
+.modal-content{
+  position: relative;
+  background-color: #fefefe;
+  margin: auto;
+  padding: 0;
+  border: 4px solid rgba(255, 0, 0, 0.7);
+  width: 80%;
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+  -webkit-animation-name: animatetop;
+  -webkit-animation-duration: 0.4s;
+  animation-name: animatetop;
+  animation-duration: 0.4s;
+  border-radius: 13px;
+}
+@-webkit-keyframes animatetop {
+  from {top: -300px; opacity: 0}
+  to {top: 0;opacity: 1;}
+}
+@keyframes animatetop {
+  from {top: -300px; opacity: 0}
+  to {top: 0; opacity: 1}
+}
+/* The close button */
+.close{
+  color: white;
   float: right;
-  margin-right: 420px;
-  margin-top: 70px;
-  width: 400px;
-  height: 100px;
+  font-size: 28px;
+  font-weight: bold;
+}
+.close:hover,
+.close:focus{
+  color: #ff0000;
+  text-decoration: none;
+  cursor: pointer;
+}
+.modal-header{
+  padding: 2px 16px;
+  background-color: #000000;
+  color: white;
+}
+.modal-body{
+  padding: 2px 16px;
+}
+.modal-body a{
+  text-decoration: none;
+  color: #003cff;
+}
+.modal-body a:hover{
+  color: red;
+}
+#myBtn{
+  border-radius: 12px;
+  background-color: rgba(255, 0, 0, 0.6);
+  color: white;
+  text-align: center;
+  border: none;
+}
+#myBtn:hover{
+  background-color: black;
+  color: red;
+}
+.card_container:first-letter{
+  color: red;
 }
 
+
+/* Блок Почему мы? */
+
+.why_we{
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  display: grid;
+  grid-template-columns: 300px 300px 300px 300px;
+  grid-auto-rows: 200px 200px 200px 200px;
+  grid-gap: 1em;
+  grid-column: span 2;
+  grid-auto-flow: dense;
+  margin: 0 auto;
+  width: 100%;
+  height: auto;
+  padding: 20px;
+}
+
+/* CONTACTS */
+.contacts{
+  color: #ffffff;
+  background-color: #565e64;
+  font-size: 8.5pt;
+  float: none;
+  width: 100%;
+  height: 280px;
+  margin-top: 12px;
+  display: grid;
+  grid-gap: 20px;
+  grid-template-columns: repeat(auto-fit,100px);
+  grid-template-rows: repeat(2, 50px);
+}
+.contacts h3{
+
+  font-size: 14pt;
+  color: red;
+}
+
+/* FOOTER */
 
