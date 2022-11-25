@@ -529,7 +529,11 @@ main{
   background-color: rgba(0, 0, 0, 0.84);
 }
 
-
+.services{
+  width: 100%;
+  height: 100%;
+  background-image: url("img/Logo_estart_For_about_me.png");
+}
 .services h2{
   text-align: center;
   font-size: 46px;
@@ -666,12 +670,25 @@ main{
   justify-content: center;
   align-items: center;
 }
-.first_services img{
+.first_services, .second_services, .thirsd_services img{
   padding-top: 8px;
 }
 .second_services{
   background-color: rgba(0, 0, 0, 0.67);
   background-image: url("../img/diagnostic_for_second_block.jpg");
+  background-position: center;
+  background-attachment: local;
+  background-repeat: no-repeat;
+  width: 250px;
+  height: 200px;
+  border-radius: 17px;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+}
+.thirsd_services{
+  background-color: rgba(0, 0, 0, 0.67);
+  background-image: url("../img/remont_avto.jpg");
   background-position: center;
   background-attachment: local;
   background-repeat: no-repeat;
@@ -690,6 +707,7 @@ main{
   width: 90%;
   max-width: 500px;
   margin: 0 auto;
+  background-image: url("../img/Logo_estart_For_about_me.png");
 }
 .card img{
   align-items: flex-start;
@@ -735,7 +753,6 @@ main{
   background-color: #fefefe;
   margin: auto;
   padding: 0;
-  border: 4px solid rgba(255, 0, 0, 0.7);
   width: 80%;
   box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
   -webkit-animation-name: animatetop;
