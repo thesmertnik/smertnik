@@ -22,7 +22,7 @@ window.onclick = function (event){
   }
 }
 //slider
-let slideIndex = 1;
+let slideIndex = 0;
 showSlides(slideIndex);
 
 // Next/previous controls
@@ -53,6 +53,7 @@ function showSlides(n) {
   }
 }
 
+//Button to call me
 
 
 

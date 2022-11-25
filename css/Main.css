@@ -457,12 +457,29 @@ main{
 .text {
   color: #f2f2f2;
   font-size: 15px;
-  padding: 8px 12px;
+  padding: 312px 48px;
   position: absolute;
   bottom: 8px;
   width: 100%;
-  text-align: center;
+  text-align: left;
 }
+.text p{
+  font-weight: bold;
+}
+.text h1{
+  font-size: 140px;
+}
+@media screen and (max-width: 280px){
+  .text{
+    text-align: center;
+  }
+  .text h1{
+    font-size: 58px;
+    text-align: center;
+  }
+}
+
+
 
 /* Number text (1/3 etc) */
 .numbertext {
@@ -532,7 +549,6 @@ main{
 .services{
   width: 100%;
   height: 100%;
-  background-image: url("img/Logo_estart_For_about_me.png");
 }
 .services h2{
   text-align: center;
@@ -700,6 +716,7 @@ main{
   align-items: center;
 }
 
+
 /* Блок: О нас */
 .card{
   box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
@@ -707,7 +724,6 @@ main{
   width: 90%;
   max-width: 500px;
   margin: 0 auto;
-  background-image: url("../img/Logo_estart_For_about_me.png");
 }
 .card img{
   align-items: flex-start;
@@ -833,23 +849,43 @@ main{
 
 /* CONTACTS */
 .contacts{
-  color: #ffffff;
-  background-color: #565e64;
-  font-size: 8.5pt;
-  float: none;
+  text-align: center;
+  justify-content: center;
+  margin-top: 30px;
+  padding: 10px;
   width: 100%;
-  height: 280px;
-  margin-top: 12px;
-  display: grid;
-  grid-gap: 20px;
-  grid-template-columns: repeat(auto-fit,100px);
-  grid-template-rows: repeat(2, 50px);
+  height: 100%;
+  display:block;
+  background-color: rgba(10, 16, 10, 0.87);
+  color: #ffffff;
 }
 .contacts h3{
-
   font-size: 14pt;
   color: red;
 }
-
+.adres{
+  width: 35%;
+  display: inline-block;
+}
+.phone{
+  width: 35%;
+  display: inline-block;
+}
+.mails{
+  width: 35%;
+  display: inline-block;
+}
+.time_work{
+  width: 35%;
+  display: inline-block;
+}
+@media screen and (max-width: 240px){
+  .adres,
+  .time_work,
+  .phone,
+  .mails{
+    width: 80%;
+  }
+}
 /* FOOTER */
 
